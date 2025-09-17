@@ -20,10 +20,13 @@ Look out for:
 
 ### 3. Open in VS Code
 Once it’s cloned, GitHub Desktop shows an option:  
-**Open in Visual Studio Code**. Click it, and the project will open.  
+* **Open in Visual Studio Code**. 
+
+Click it, and the project will open.  
 
 ### 4. Start working
-You can now edit files in VS Code. 
+* You can now edit files in VS Code. 
+* Open in [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) to watch the file locally in your browser.
 
 ### FAQ: Can you make changes to your cloned repo?
 * **Yes, but only locally.**
