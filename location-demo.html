@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>window.location Demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <h1>window.location — hands-on</h1>
+
+  <p>
+    Try these buttons and watch the output panel and your browser’s
+    address bar/history. Open DevTools <code>Console</code> to see logs too.
+  </p>
+
+  <section>
+    <h2>Inspect current URL</h2>
+    <div class="row">
+      <button id="btnParts">Log URL parts</button>
+      <button id="btnParams">Read query params</button>
+      <button id="btnHash">Show hash</button>
+    </div>
+  </section>
+
+  <section>
+    <h2>Navigate / reload</h2>
+    <div class="row">
+      <button id="btnReload">Reload (cache)</button>
+      <button id="btnForceReload" title="Bypass cache (server)">
+        Reload (force)
+      </button>
+      <button id="btnAssign">Go (assign)</button>
+      <button id="btnReplace" title="No back button after this">
+        Go (replace)
+      </button>
+    </div>
+    <div class="row" style="margin-top:.5rem">
+      <input id="urlInput" size="50"
+             placeholder="https://example.com/?user=5#top"
+             value="https://example.com/?user=5#top" />
+      <button id="btnSetHash">Set hash to #demo</button>
+      <button id="btnClearHash">Clear hash</button>
+      <button id="btnSetParam">Set ?user=42</button>
+    </div>
+  </section>
+
+  <section>
+    <h2>Output</h2>
+    <div id="out" aria-live="polite"></div>
+  </section>
+
+</body>
+</html>
